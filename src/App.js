@@ -6,12 +6,12 @@ export default function App() {
   const [isExploding, setIsExploding] = React.useState(false);
 
   const config = {
-    angle: '10',
+    angle: '280',
     spread: '360',
     startVelocity: 30,
     elementCount: 70,
     dragFriction: 0.12,
-    duration: 5000,
+    duration: 4000,
     stagger: 3,
     width: '12px',
     height: '12px',
@@ -21,13 +21,9 @@ export default function App() {
 
   return (
     <>
-      <a
-        href="#"
-        class="button pulse"
-        onClick={() => setIsExploding(!isExploding)}
-      >
-        Subscribe
+      <a class="button pulse" onClick={() => setIsExploding(!isExploding)}>
         <Confetti active={isExploding} config={config} />
+        Subscribe
       </a>
     </>
   );
