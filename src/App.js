@@ -12,8 +12,8 @@ export default function App() {
     dragFriction: 0.12,
     duration: 5000,
     stagger: 3,
-    width: '15px',
-    height: '15px',
+    width: '12px',
+    height: '12px',
     perspective: '500px',
     colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
   };
