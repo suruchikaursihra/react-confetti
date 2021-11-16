@@ -16,7 +16,8 @@ export default function App() {
     width: '12px',
     height: '12px',
     perspective: '500px',
-    colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
+    colors: ['#F491F7', '#8DF2C9'],
+    // colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
   };
 
   return (
