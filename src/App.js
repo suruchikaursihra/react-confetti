@@ -1,11 +1,12 @@
 import React from 'react';
 import Confetti from 'react-dom-confetti';
+import './style.css';
 
 export default function App() {
   const [isExploding, setIsExploding] = React.useState(false);
 
   const config = {
-    angle: '90',
+    angle: '10',
     spread: '360',
     startVelocity: 30,
     elementCount: 70,
@@ -20,22 +21,14 @@ export default function App() {
 
   return (
     <>
-      <button
-        style={{
-          width: 100,
-          height: 20,
-          position: 'absolute',
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-          margin: 'auto',
-        }}
+      <a
+        href="#"
+        class="button pulse"
         onClick={() => setIsExploding(!isExploding)}
       >
-        Explore
+        Subscribe
         <Confetti active={isExploding} config={config} />
-      </button>
+      </a>
     </>
   );
 }
